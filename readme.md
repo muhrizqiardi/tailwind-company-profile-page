@@ -1,5 +1,5 @@
 # Company Profile Page Example Made with TailwindCSS
-There are 6 variants: Yellow, Red, Green, Blue, Darkblue, and Gray.
+There are 6 variants: [Yellow](https://mora.rzqjpg.xyz/), [Red](https://mora.rzqjpg.xyz/variant/red.html), [Green](https://mora.rzqjpg.xyz/variant/green.html), [Blue](https://mora.rzqjpg.xyz/variant/blue.html), [Darkblue](https://mora.rzqjpg.xyz/variant/darkblue.html), and [Gray](https://mora.rzqjpg.xyz/variant/gray.html).
 ## [Yellow Variant](https://mora.rzqjpg.xyz/)
 ![Yellow Variant](./screenshots/yellow.png)
 ## [Red Variant](https://mora.rzqjpg.xyz/variant/red.html)
