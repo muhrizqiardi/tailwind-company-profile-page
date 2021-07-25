@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/styles/style.css">
-  <title>Document</title>
+  <title>Mora Inc.</title>
 </head>
 
 <body>
@@ -16,14 +16,32 @@
       <a href="/" id="brand">
         <img src="/assets/Mora Text.svg" style="height: 50px; width: auto;" alt="Mora">
       </a>
-      <nav class="hidden md:flex flex-row justify-end items-center">
-        <a href="/" class="ml-6 text-gray-900 border-b-2 border-gray-900">Home</a>
-        <a href="/" class="ml-6 text-gray-900 hover:border-b-2 border-blue-500">Solution</a>
-        <a href="/" class="ml-6 text-gray-900 hover:border-b-2 border-blue-500">Testimonials</a>
-        <a href="/" class="ml-6 text-gray-900 hover:border-b-2 border-blue-500">Contact Us</a>
-        <a href="/" class="ml-6 bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 w-max rounded-lg">Contact Us</a>
+      <nav id="nav"
+        class="fixed top-0 left-0 z-10 w-screen h-screen flex flex-col items-center py-5 bg-white md:py-0 md:w-max md:h-auto md:static md:flex-row md:justify-end transform md:transition-none transition-transform duration-200 md:translate-y-0 -translate-y-full">
+        <a href="/" class="mb-6 md:mb-0 md:ml-6 text-gray-900 border-b-2 border-gray-900">Home</a>
+        <a href="/" class="mb-6 md:mb-0 md:ml-6 text-gray-900">Solution</a>
+        <a href="/" class="mb-6 md:mb-0 md:ml-6 text-gray-900">Testimonials</a>
+        <a href="/" class="mb-6 md:mb-0 md:ml-6 text-gray-900">Contact Us</a>
+        <a href="/"
+          class="mb-6 md:mb-0 md:ml-6 bg-blue-500 hover:bg-yellow-700 text-white px-4 py-2 w-max rounded-lg">Contact
+          Us</a>
+        <button id="nav-close" class="md:hidden">
+          <svg width="24" height="24" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0)">
+              <rect x="-2.38931" y="-9.46037" width="87.4687" height="10" rx="2"
+                transform="rotate(45 -2.38931 -9.46037)" fill="black" />
+              <rect x="-4.24193" y="47.1709" width="72.7087" height="10" rx="2" transform="rotate(-45 -4.24193 47.1709)"
+                fill="black" />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect width="50" height="50" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
       </nav>
-      <button class="block md:hidden p-2 rounded-md bg-blue-500 focus:ring-4 ring-blue-200">
+      <button id="nav-open" class="block md:hidden p-2 rounded-md bg-blue-500 focus:ring-4 ring-yellow-200">
         <svg class="" width="24" height="24" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="50" height="10" rx="2" fill="white" />
           <rect y="20" width="50" height="10" rx="2" fill="white" />
@@ -39,7 +57,7 @@
       <h1 class="text-5xl text-gray-900 mb-5">Quisque pulvinar, sapien in ornare gravida.</h1>
       <p class="mb-5 text-lg">Massa lacus luctus felis, vel fermentum neque lacus ut lacus.</p>
       <div class="">
-        <a href="/" class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 w-max rounded-lg">
+        <a href="/" class="bg-blue-500 hover:bg-yellow-700 text-white px-4 py-2 w-max rounded-lg">
           Learn More
         </a>
       </div>
@@ -51,7 +69,7 @@
 
   <section id="ratings"></section>
 
-  <section id="what-we-do" class="my-5 p-5 lg:max-h-96 bg-blue-50">
+  <section id="what-we-do" class="my-5 p-5 lg:max-h-96 bg-yellow-50">
     <div class="flex flex-col items-center mb-5">
       <div class=" bg-blue-500 rounded-full h-1 w-40 mb-3"></div>
       <h1 class="text-3xl text-gray-900 mb-5">What We Do</h1>
@@ -88,7 +106,7 @@
     </div>
   </section>
 
-  <section id="about" class="my-2 grid grid-cols-1 md:grid-cols-3 bg-blue-50">
+  <section id="about" class="my-2 grid grid-cols-1 md:grid-cols-3 bg-yellow-50">
     <div class="p-5 md:p-10 flex flex-col justify-center">
       <div class=" bg-blue-500 rounded-full h-1 w-40 mb-3"></div>
       <h1 class="text-3xl text-gray-900 mb-5">About Us</h1>
@@ -157,6 +175,7 @@
       Copyright © 2021 Muhammad Rizqi Ardiansyah
     </div>
   </footer>
+  <script src="/script.js"></script>
 </body>
 
 </html>
